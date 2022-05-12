@@ -17,3 +17,5 @@ The product design consists of the following parts:
 ![Product Design](Product_design.jpg)
 
 Image 1: Design of the product
+
+[Return to README](../README.md)
