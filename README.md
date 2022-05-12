@@ -23,4 +23,5 @@ To read more about this project, click on any of the following links:
   Contact: gabriel.gonzalezflores@ucr.ac.cr
 
 * Sebastián José Salas Concepción
+  
   Contact: sebastian.salasconcepcion@ucr.ac.cr
