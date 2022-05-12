@@ -6,3 +6,5 @@ To achieve these tasks, the hardware simulator known as **Simics** will be used 
 
 Different work objectives will have to be completed, so the three members of the team will work on different tasks in parallel, while other tasks will be worked together.  This will be the first time that this team works with Simics and assembly language for a project, so it is vital that all members take time to study, read the official documentation of Simics, and do research on topics in which there is a lack of knowledge. To find these specific tasks and a list of topics that need to be researched, **refer to** the **projects section** or **issues** of this GitHub repository. By accomplishing the goals for this project, the team will be able to have a **better understanding** of Simics, PCI-Express port, and
 assembly language. Also, each member will **gain experience** in their design abilities, team communication skills, and correct management of uncertainty on new projects.
+
+[Return to README](../README.md)
