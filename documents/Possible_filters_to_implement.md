@@ -1,14 +1,13 @@
-## Possible filters to implement
----
+# Possible filters to implement
 
-The following is the list of the possible filters to implement into the camera device user program:
+The following list contains different filters that could be used to modify the pictures taken by the device:
 
 1- Negative: inverts the colors in the entire picture.
 
-2- Increment brightness: as its name suggests, this filter will increment the brightness levels in a picture.
+2- Increment brightness: increments the brightness levels in the picture.
 
-3- Red coloration: changes all the colors in the picture to a more red tone.
+3- Red coloration: changes the color scheme of the picture to a more reddish one.
 
-4- Grayscale: a very popular filter, changes the color scheme to a grayscale.
+4- Grayscale: changes the color scheme of the picture to a grayscale.
 
-5- Pixelated: makes the picture look more pixelated, giving the impression that it has a lower quality.
+5- Pixelated: changes the picture to a more pixelated form, giving the impression of lower quality
