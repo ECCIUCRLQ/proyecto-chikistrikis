@@ -11,3 +11,5 @@ The following list contains different filters that could be used to modify the p
 4- Grayscale: changes the color scheme of the picture to a grayscale.
 
 5- Pixelated: changes the picture to a more pixelated form, giving the impression of lower quality
+
+[Return to README](../README.md)
