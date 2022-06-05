@@ -105,19 +105,17 @@ bank regs is function_mapped_bank {
        which should match with the map_func param in one BAR */
     param function = 1;
  
-    register current_status size 4 @ 0x0 {
+    register current_status size 4 @ 0x0 { // Represents the current status of the device.
       is write;
-      param init_val = 0x0;         // initial value represents the current status of the device.
-                                    // 0x0: the device is shutdown.
+      param init_val = 0x0;         // 0x0: the device is shutdown.
                                     // 0x1: the device is on.
                                     // 0x2: the device is filtering an image.
                                     // 0x3: the device received an error.
     }
 
-    register filter_to_be_applied size 4 @ 0x4 {
+    register filter_to_be_applied size 4 @ 0x4 { // Represents the filter that is going to be applied to the image.
       is write;
-      param init_val = 0x0;         // initial value represents the filter that is being applied.
-                                    // 0x0: no filter is being applied.
+      param init_val = 0x0;         // 0x0: no filter is being applied.
                                     // 0x1: negative filter.
                                     // 0x2: increase brightness filter.
                                     // 0x3: red coloration filter.
@@ -125,6 +123,10 @@ bank regs is function_mapped_bank {
                                     // 0x5: pixelated filter.
     }
 
+    register size_of_bmp size 4 @ 0x8 { // Stores the size of the bmp archive.
+      is write;
+      param init_val = 0x0;
+    }
     
     //when command register is written with a 1 then the device outputs current data 
     //stored in the input attribute
