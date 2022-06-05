@@ -127,10 +127,26 @@ bank regs is function_mapped_bank {
       is write;
       param init_val = 0x0;
     }
+
+    register day size 4 @ 0xc {  // Stores the day in which the image was modified.
+      is write;
+      param init_val = 0x0;
+    }
+
+    register year size 4 @ 0x10 { // Stores the year in which the image was modified.
+      is write;
+      param init_val = 0x0;
+    }
+
+    register hour size 4 @ 0x14 { // Stores the hour in which the image was modified.
+      is write;
+      param init_val = 0x0;
+    }
     
-    //when command register is written with a 1 then the device outputs current data 
-    //stored in the input attribute
-    register cmd size 4 @ 0x14 {
+    // when command register is written with a 1 then the device outputs current data 
+    // stored in the input attribute
+    // this register will be later modified to help write the bytes of the bmp archive to the buffer.
+    register cmd size 4 @ 0x18 {
         is write;
         param init_val = 0x0;
         
@@ -152,8 +168,9 @@ bank regs is function_mapped_bank {
         }
     }
     
-    //for communicating initial 8 bytes of the file after command=1 and input attr value is populated
-    register buffer[i < BUFFER_SIZE] size 1 @ 0x18 + i {
+    // for communicating initial 8 bytes of the file after command=1 and input attr value is populated
+    // this register is going to be used to store the bytes of the bmp archive.
+    register buffer[i < BUFFER_SIZE] size 1 @ 0x1c + i {
         is read_only;
         param init_val = 0x0;
     }
