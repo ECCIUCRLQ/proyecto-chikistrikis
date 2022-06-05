@@ -105,7 +105,16 @@ bank regs is function_mapped_bank {
        which should match with the map_func param in one BAR */
     param function = 1;
  
-    register filter_to_be_applied size 4 @ 0x0 {
+    register current_status size 4 @ 0x0 {
+      is write;
+      param init_val = 0x0;         // initial value represents the current status of the device.
+                                    // 0x0: the device is shutdown.
+                                    // 0x1: the device is on.
+                                    // 0x2: the device is filtering an image.
+                                    // 0x3: the device received an error.
+    }
+
+    register filter_to_be_applied size 4 @ 0x4 {
       is write;
       param init_val = 0x0;         // initial value represents the filter that is being applied.
                                     // 0x0: no filter is being applied.
@@ -115,6 +124,7 @@ bank regs is function_mapped_bank {
                                     // 0x4: grayscale filter.
                                     // 0x5: pixelated filter.
     }
+
     
     //when command register is written with a 1 then the device outputs current data 
     //stored in the input attribute
