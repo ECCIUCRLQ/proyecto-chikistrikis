@@ -1,3 +1,0 @@
-# Auto-generated file. Any changes will be overwritten!
-decl { substitute "/home/carlos27/Simics/simics-6.0.128/../simics-training-6.0.pre26/targets/workshop-02/006-accelerator-in-qsp.simics" }
-run-command-file "/home/carlos27/Simics/simics-6.0.128/../simics-training-6.0.pre26/targets/workshop-02/006-accelerator-in-qsp.simics"
