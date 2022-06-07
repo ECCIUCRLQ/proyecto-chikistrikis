@@ -9,6 +9,8 @@ To read more about this project, click on any of the following links:
 * [Product design](./documents/Product_design.md)
 
 * [List of possible filters to be applied to images](./documents/Possible_filters_to_implement.md)
+  
+* [Cloning the repository and compiling it](./documents/Cloning_and_compilation.md)
 
 -------------------------------------
 
