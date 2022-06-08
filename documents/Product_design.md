@@ -12,7 +12,7 @@ The product design consists of the following parts:
 
 5. Tests to verify the correct operation of the device and the filters.
 
-![Product Design](Product_design.jpg)
+![Product Design](images/Product_design.jpg)
 
 Image 1: Design of the product
 
