@@ -12,6 +12,8 @@ To read more about this project, click on any of the following links:
   
 * [Cloning the repository and compiling it](./documents/Cloning_and_compilation.md)
 
+* [Wiki](https://github.com/ECCIUCRLQ/proyecto-chikistrikis/wiki)
+
 -------------------------------------
 
 ## **Credits**
