@@ -457,7 +457,7 @@ void write_command_to_pci_device(uint32_t command) {
 }
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Carlos Quesada Estrada, Gabriel Gonzáles Flores, Sebastián Salas");
+MODULE_AUTHOR("Carlos Quesada Estrada, Gabriel Gonzáles Flores, Sebastián Salas Concepción");
 MODULE_DESCRIPTION("PCI driver");
 MODULE_VERSION("1.0");
 MODULE_DEVICE_TABLE(pci, pci_capture_driver_table);
