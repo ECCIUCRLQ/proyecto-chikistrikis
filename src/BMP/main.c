@@ -14,7 +14,6 @@ extern "C" {
 int main(int argc, char *argv[]) {
   if (argc == 4) {
     BMP_Image* new_image = read_BMP(argv[1]);
-    printf("Argv[3] is: %s\n",argv[3]);
     int filter = atoi(argv[3]);
     printf("El valor de filter es: %i\n",filter);
     if(new_image != NULL) {
