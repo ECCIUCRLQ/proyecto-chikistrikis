@@ -36,5 +36,5 @@ typedef struct {
 } BMP_Image;
 
 BMP_Image* read_BMP(const char* file_name);
-void save_BMP(const BMP_Image* bmp_image,const char* file_name);
+void save_BMP(BMP_Image* bmp_image,const char* file_name);
 #endif
