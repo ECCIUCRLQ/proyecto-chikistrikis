@@ -1,4 +1,4 @@
-run-command-file "%script%/firststeps-no-network.simics"
+run-command-file "%script%/firststeps.simics"
 load-module pci_capture_comp
 load-module module = pci-data-capture
 create-pci-capture-comp name = pci_capture
@@ -8,7 +8,7 @@ output-radix 16
 
 #For further debug 
 #turning all verbose for the device
-pci_capture.log-level 4
+pci_capture.log-level -r 4
 #write to the command reg for testing 
 #pci_capture.dev->input = ""
 #board.mb.sb.ext_mem.map
