@@ -16,7 +16,6 @@ int main(int argc, char *argv[]) {
   if (argc == 4) {
     BMP_Image* new_image = read_BMP(argv[1]);
     int filter = atoi(argv[3]);
-    printf("El valor de filter es: %i\n",filter);
     if(new_image != NULL) {
       printf("New bmp image has been created.\n");
       printf("Next, the filter will be applied.\n");
