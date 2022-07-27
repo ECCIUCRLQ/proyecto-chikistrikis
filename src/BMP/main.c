@@ -7,6 +7,7 @@ extern "C" {
 #endif
   void increment_brightness(u_int8_t* pixel_data, int32_t data_size);
   void inverse_colors(u_int8_t* pixel_data, int32_t data_size);
+  void increment_saturation(u_int8_t* pixel_data, int32_t data_size);
 #ifdef __cplusplus
 }
 #endif
@@ -27,7 +28,12 @@ int main(int argc, char *argv[]) {
           inverse_colors(new_image->pixel_data,new_image->data_size);
           printf("The inverse color filter has been applied to the image.\n");
         } else {
-          printf("The filter you choosed doesn't exist. No filter has been applied to the image.\n");
+          if(filter == 3) {
+            increment_saturation(new_image->pixel_data,new_image->data_size);
+            printf("The increase saturation filter has been applied to the image.\n");
+          } else {
+            printf("The filter you choosed doesn't exist. No filter has been applied to the image.\n");
+          }
         }
       }
       printf("Now, its time to save it.\n");
@@ -37,7 +43,7 @@ int main(int argc, char *argv[]) {
       free(new_image);
     }
   } else {
-    printf("Usage: ./program name_of_BMP.bmp name_of_BPM_copy.bmp filter_number\nFor example: ./program Homero.bmp Homero_copy.bmp 1\nFilter 1: increase brightness filter.\nFilter 2: inverse color filter.\n");
+    printf("Usage: ./program name_of_BMP.bmp name_of_BPM_copy.bmp filter_number\nFor example: ./program Homero.bmp Homero_copy.bmp 1\nFilter 1: increase brightness filter.\nFilter 2: inverse color filter.\nFilter 3: increase saturation filter.\n");
   }
 
   return 0;
